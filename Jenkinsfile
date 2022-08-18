@@ -3,8 +3,10 @@ pipeline{
     stages{
         stage ('initialize') {
             steps{
-                echo 'Hello worold'
-                echo 'Hi I am Raviteja' 
+                echo 'PATH = ${PATH}'
+                echo 'executed 1st command'
+                echo 'M2_home = ${M2_HOME}'
+                echo 'executed 2nd command' 
             }
         }
     }
