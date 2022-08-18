@@ -3,14 +3,8 @@ pipeline{
     stages{
         stage ('initialize') {
             steps{
-                echo 'PATH = $PATH;' 
-                echo 'M2_HOME= $M2_HOME'
+                echo 'Hello worold' 
             }
-        stage ('build') {
-            steps{
-                sh 'mvn clean package'
-            }
-        }
         }
     }
 }
