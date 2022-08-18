@@ -11,7 +11,7 @@ pipeline{
                         echo 'M2_HOME= $M2_HOME'
                    ...
             }
-        stage ('building') {
+        stage ('build') {
             steps{
                 sh 'mvn clean package'
             }
